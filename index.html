@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>County Finder</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+    <link rel="stylesheet" type="text/css" href="www/css/index.css">
+    <script rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <body style="background-color:lightblue;">
+    <div>
+
+      <h1 style="color:royalblue;text-align:center">
+        Kentucky County Info
+      </h1>
+
+      <p style="color:white">
+        Use this form to get info about selected counties.
+      </p>
+
+      <div style="margin: 0 auto; padding:1em; width:50%; background-color:cornsilk; border: 2px solid brown; border-radius:15px; font-family:Arial, sans serif;" id="holder" class="col-md-12 col-sm-12 col-xs-12">
+
+        <div id="picField">
+          <!-- this is the spot for the image of the county. -->
+        </div>
+
+        <div id="weatherField" class="col-sm-12 col-xs-12">
+
+          <p style="color:brown;font-family:Courier;">
+            Select Your County!
+          </p>
+
+        </div>
+      </div>
+
+      <div class="ui-widget">
+
+        <form id="form1" >
+          <input type="text" id="entry" onplaceholder="Enter County Name"></input>
+        </form>
+
+        <button id="countyButton"type="button" onclick="getCounty()">
+          Pick County
+        </button>
+
+      </div>
+    </div>
+    
+      <!-- these are all the javascript files needed to run the system. -->
+    <script src="_js/main.js"></script>
+    <script src="www/js/index.js"></script>
+    <script scr="_js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+      <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+      <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
