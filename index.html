@@ -19,12 +19,23 @@
       <h1 style="color:royalblue;text-align:center">
         Kentucky County Info
       </h1>
-
       <p style="color:white">
         Use this form to get info about selected counties.
       </p>
+      <div class="ui-widget" class="col-sm-12 col-xs-12">
 
-      <div style="margin: 0 auto; padding:1em; width:50%; background-color:cornsilk; border: 2px solid brown; border-radius:15px; font-family:Arial, sans serif;" id="holder" class="col-md-12 col-sm-12 col-xs-12">
+        <form id="form1" >
+          <input type="text" id="entry" onplaceholder="Enter County Name" class="col-sm-3 col-xs-3"></input>
+        </form>
+
+        <button id="countyButton"type="button" onclick="getCounty()" class="col-sm-3 col-xs-4">
+          Pick County
+        </button>
+
+      </div>
+      
+
+      <div style="margin: 0 auto; padding:1em; background-color:cornsilk; border: 2px solid brown; border-radius:15px; font-family:Arial, sans serif;" id="holder" class="col-md-12 col-sm-12 col-xs-12">
 
         <div id="picField">
           <!-- this is the spot for the image of the county. -->
@@ -39,17 +50,7 @@
         </div>
       </div>
 
-      <div class="ui-widget">
-
-        <form id="form1" >
-          <input type="text" id="entry" onplaceholder="Enter County Name"></input>
-        </form>
-
-        <button id="countyButton"type="button" onclick="getCounty()">
-          Pick County
-        </button>
-
-      </div>
+      
     </div>
     
       <!-- these are all the javascript files needed to run the system. -->
